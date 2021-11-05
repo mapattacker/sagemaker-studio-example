@@ -1,0 +1,10 @@
+s3:
+    bucket: "s3-imda-aipo-sagemaker-test"
+    project_prefix: "rbansound"
+    raw_data: "s3://s3-imda-aipo-sagemaker-test/urbansound/raw_data/UrbanSound8K/audio"
+hyperparameters:
+    epoch: 12
+    batch_size: 32
+deploy:
+    model_dir: "model/0000000"
+    bucket: "s3://sagemaker-ap-southeast-1-052567997892/tensorflow-training-2021-11-01-05-16-07-777/output/model.tar.gz"
